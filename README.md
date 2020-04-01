@@ -62,5 +62,5 @@
 **sudo ./waf install**
 
 ## 测试
-**nfd-start**
-**nfd-stop**
+&#160; &#160; &#160; &#160; **nfd-start**  
+&#160; &#160; &#160; &#160; **nfd-stop**
