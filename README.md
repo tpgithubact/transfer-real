@@ -21,7 +21,7 @@
 
 下文针对ndn支持的ubuntu平台，如在安装过程中遇到其它平台或库的问题，需自行解决。
 
-## 准备环境
+## ndn-cxx准备环境
 > GCC >= 5.3, or clang >= 3.6  
 > python2 >= 2.7, or python3 >= 3.4  
 > Boost libraries >= 1.58  
@@ -40,3 +40,5 @@
 命令：  
 **sudo apt install doxygen graphviz python3-pip  
 sudo pip3 install sphinx sphinxcontrib-doxylink**
+
+## 下载ndn-cxx
