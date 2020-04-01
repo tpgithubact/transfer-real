@@ -30,7 +30,7 @@
 > OpenSSL >= 1.0.2  
 
 命令：  
-**sudo apt install build-essential libboost-all-dev libssl-dev libsqlite3-dev pkg-config python-minimal**
+    **sudo apt install build-essential libboost-all-dev libssl-dev libsqlite3-dev pkg-config python-minimal**
 
 > doxygen  
 > graphviz  
@@ -45,6 +45,7 @@
 **sudo apt-get install doxygen graphviz python-sphinx**
 
 ## 下载和编译安装
+命令：  
 **git clone git@github.com:tpgithubact/transfer-real.git**  
 **cd transfer-real/**  
 **git checkout remotes/origin/ndn-cxx**
@@ -61,3 +62,5 @@
 **sudo ./waf install**
 
 ## 测试
+**nfd-start**
+**nfd-stop**
