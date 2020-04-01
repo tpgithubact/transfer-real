@@ -30,7 +30,7 @@
 > OpenSSL >= 1.0.2  
 
 命令：  
-    **sudo apt install build-essential libboost-all-dev libssl-dev libsqlite3-dev pkg-config python-minimal**
+&#160; &#160; &#160; &#160; **sudo apt install build-essential libboost-all-dev libssl-dev libsqlite3-dev pkg-config python-minimal**
 
 > doxygen  
 > graphviz  
@@ -38,29 +38,30 @@
 > sphinxcontrib-doxylink  
 
 命令：  
-**sudo apt install doxygen graphviz python3-pip**  
-**sudo pip3 install sphinx sphinxcontrib-doxylink**
+&#160; &#160; &#160; &#160; **sudo apt install doxygen graphviz python3-pip**  
+&#160; &#160; &#160; &#160; **sudo pip3 install sphinx sphinxcontrib-doxylink**
 
-**sudo apt-get install build-essential pkg-config libboost-all-dev libsqlite3-dev libssl-dev libpcap-dev**  
-**sudo apt-get install doxygen graphviz python-sphinx**
+&#160; &#160; &#160; &#160; **sudo apt-get install build-essential pkg-config libboost-all-dev libsqlite3-dev libssl-dev libpcap-dev**  
+&#160; &#160; &#160; &#160; **sudo apt-get install doxygen graphviz python-sphinx**
 
 ## 下载和编译安装
 命令：  
-**git clone git@github.com:tpgithubact/transfer-real.git**  
-**cd transfer-real/**  
-**git checkout remotes/origin/ndn-cxx**
-**cd 0.6.2/**  
-**./waf configure**  
-**./waf**  
-**sudo ./waf install**
+&#160; &#160; &#160; &#160; **git clone git@github.com:tpgithubact/transfer-real.git**  
+&#160; &#160; &#160; &#160; **cd transfer-real/**  
+&#160; &#160; &#160; &#160; **git checkout remotes/origin/ndn-cxx**
+&#160; &#160; &#160; &#160; **cd 0.6.2/**  
+&#160; &#160; &#160; &#160; **./waf configure**  
+&#160; &#160; &#160; &#160; **./waf**  
+&#160; &#160; &#160; &#160; **sudo ./waf install**
 
-**cd ../**
-**git checkout remotes/origin/NFD**
-**cd 0.6.2/**  
-**./waf configure**  
-**./waf**  
-**sudo ./waf install**
+&#160; &#160; &#160; &#160; **cd ../**
+&#160; &#160; &#160; &#160; **git checkout remotes/origin/NFD**
+&#160; &#160; &#160; &#160; **cd 0.6.2/**  
+&#160; &#160; &#160; &#160; **./waf configure**  
+&#160; &#160; &#160; &#160; **./waf**  
+&#160; &#160; &#160; &#160; **sudo ./waf install**
 
 ## 测试
+命令：  
 &#160; &#160; &#160; &#160; **nfd-start**  
 &#160; &#160; &#160; &#160; **nfd-stop**
