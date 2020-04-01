@@ -48,18 +48,18 @@
 命令：  
 &#160; &#160; &#160; &#160; **git clone git@github.com:tpgithubact/transfer-real.git**  
 &#160; &#160; &#160; &#160; **cd transfer-real/**  
-&#160; &#160; &#160; &#160; **git checkout remotes/origin/ndn-cxx**
+&#160; &#160; &#160; &#160; **git checkout remotes/origin/ndn-cxx**  
 &#160; &#160; &#160; &#160; **cd 0.6.2/**  
 &#160; &#160; &#160; &#160; **./waf configure**  
 &#160; &#160; &#160; &#160; **./waf**  
-&#160; &#160; &#160; &#160; **sudo ./waf install**
+&#160; &#160; &#160; &#160; **sudo ./waf install**  
 
-&#160; &#160; &#160; &#160; **cd ../**
-&#160; &#160; &#160; &#160; **git checkout remotes/origin/NFD**
+&#160; &#160; &#160; &#160; **cd ../**  
+&#160; &#160; &#160; &#160; **git checkout remotes/origin/NFD**  
 &#160; &#160; &#160; &#160; **cd 0.6.2/**  
 &#160; &#160; &#160; &#160; **./waf configure**  
 &#160; &#160; &#160; &#160; **./waf**  
-&#160; &#160; &#160; &#160; **sudo ./waf install**
+&#160; &#160; &#160; &#160; **sudo ./waf install**  
 
 ## 测试
 命令：  
