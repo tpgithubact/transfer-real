@@ -12,7 +12,7 @@
 > macOS 10.15  
 > CentOS 7 (with gcc 7 and boost 1.58.0)  
 
-应该可以运行但还未测试的平台:
+应该可以运行但未测试的平台:
 > Debian >= 9  
 > Fedora >= 24  
 > Gentoo Linux  
