@@ -31,7 +31,7 @@
 > OpenSSL >= 1.0.2  
 
 命令：  
-&#160; &#160; &#160; &#160; **sudo apt install build-essential libboost-all-dev libssl-dev libsqlite3-dev pkg-config python-minimal**
+`sudo apt install build-essential libboost-all-dev libssl-dev libsqlite3-dev pkg-config python-minimal`
 
 > doxygen  
 > graphviz  
