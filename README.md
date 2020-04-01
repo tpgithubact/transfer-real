@@ -21,7 +21,7 @@
 
 下文针对ndn支持的ubuntu平台，如在安装过程中遇到其它平台或库的问题，需自行解决。
 
-## ndn-cxx准备环境
+## 准备环境
 > GCC >= 5.3, or clang >= 3.6  
 > python2 >= 2.7, or python3 >= 3.4  
 > Boost libraries >= 1.58  
@@ -38,7 +38,26 @@
 > sphinxcontrib-doxylink  
 
 命令：  
-**sudo apt install doxygen graphviz python3-pip  
-sudo pip3 install sphinx sphinxcontrib-doxylink**
+**sudo apt install doxygen graphviz python3-pip**  
+**sudo pip3 install sphinx sphinxcontrib-doxylink**
 
-## 下载ndn-cxx
+**sudo apt-get install build-essential pkg-config libboost-all-dev libsqlite3-dev libssl-dev libpcap-dev**  
+**sudo apt-get install doxygen graphviz python-sphinx**
+
+## 下载和编译安装
+**git clone git@github.com:tpgithubact/transfer-real.git**  
+**cd transfer-real/**  
+**git checkout remotes/origin/ndn-cxx**
+**cd 0.6.2/**  
+**./waf configure**  
+**./waf**  
+**sudo ./waf install**
+
+**cd ../**
+**git checkout remotes/origin/NFD**
+**cd 0.6.2/**  
+**./waf configure**  
+**./waf**  
+**sudo ./waf install**
+
+## 测试
