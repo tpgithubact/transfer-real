@@ -1,3 +1,7 @@
+# 资料  
+文献：http://named-data.net/techreport/TR001ndn-proj.pdf  
+网址：http://named-data.net  
+
 # NFD介绍
 
 NDN Forwarding Daemon (NFD) is a network forwarder that implements and evolves together with the Named Data Networking (NDN) protocol. After the initial release, NFD will become a core component of the NDN Platform and will follow the same release cycle.
