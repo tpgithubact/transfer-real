@@ -5,7 +5,6 @@ Starting
 If you have installed NFD from source code, it is recommended to start NFD with the nfd-start script:
 
 nfd-start
-On macOS it may ask for your keychain password or ask nfd wants to sign using key in your keychain. Enter your keychain password and click “Always Allow”.
 
 Later, you can stop NFD with nfd-stop or by simply killing the nfd process.
 
@@ -21,7 +20,7 @@ where <other host> is the name or IP address of the other host (e.g., udp://spur
 face-created id=308 local=udp4://10.0.2.15:6363 remote=udp4://131.179.196.46:6363 persistency=persistent
 To add a route /ndn toward the remote NFD, execute the following command in terminal:
 
-nfdc route add /ndn udp://<other host>
+nfdc route add /ndn udp://<other host>  
 This outputs:
 
 route-add-accepted prefix=/ndn nexthop=308 origin=static cost=0 flags=child-inherit expires=never
