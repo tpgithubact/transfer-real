@@ -1,4 +1,4 @@
-# NFD Overview
+# NFD介绍
 
 NDN Forwarding Daemon (NFD) is a network forwarder that implements and evolves together with the Named Data Networking (NDN) protocol. After the initial release, NFD will become a core component of the NDN Platform and will follow the same release cycle.
 
@@ -10,11 +10,11 @@ NFD will keep evolving in three aspects: improvement of the modularity framework
 
 The design and development of NFD benefited from our earlier experience with CCNx software package. However, NFD is not in any part derived from CCNx codebase and does not maintain compatibility with CCNx.
 
-# Major Modules of NFD
+# NFD主要模块
 
 NFD has the following major modules:
 
-Core
+- Core
 Provides various common services shared between different NFD modules. These include hash computation routines, DNS resolver, config file, face monitoring, and several other modules.
 
 Faces
@@ -34,9 +34,9 @@ Implements the NFD Management Protocol, which allows applications to configure N
 RIB Management
 Manages the routing information base (RIB). The RIB may be updated by different parties in different ways, including various routing protocols, application’s prefix registrations, and command-line manipulation by sysadmins. The RIB management module processes all these requests to generate a consistent forwarding table, and then syncs it up with the NFD’s FIB, which contains only the minimal information needed for forwarding decisions. Strictly speaking RIB management is part of the NFD management module. However, due to its importance to the overall operations and its more complex processing, we make it a separate module.
 
-# Running
+# NFD运行
 
-## Starting
+## 开启
 
 If you have installed NFD from source code, it is recommended to start NFD with the nfd-start script:
 
@@ -46,7 +46,7 @@ Later, you can stop NFD with nfd-stop or by simply killing the nfd process.
 
 If you have installed NFD using a package manager, you can start and stop NFD using the operating system’s service manager (such as systemd or launchd) or using “Automatically start NFD” option in NDN Control Center app.
 
-## Connecting to remote NFDs
+## 建立NFD连接
 
 To create a UDP tunnel to a remote NFD, execute the following command in terminal:
 
