@@ -14,24 +14,25 @@ The design and development of NFD benefited from our earlier experience with CCN
 
 NFD has the following major modules:
 
-- Core
+- Core  
 Provides various common services shared between different NFD modules. These include hash computation routines, DNS resolver, config file, face monitoring, and several other modules.
 
-Faces
+- Faces  
 Implements the NDN face abstraction on top of different lower level transport mechanisms.
 
-Tables
+- Tables  
 Implements the Content Store (CS), the Pending Interest Table (PIT), the Forwarding Information Base (FIB), and other data structures to support forwarding of NDN Data and Interest packets.
 
-Forwarding
+- Forwarding  
 Implements basic packet processing pathways, which interact with Faces, Tables, and Strategies.
 
 Strategy Support, a major part of the forwarding module
 Implements a framework to support different forwarding strategies. It includes StrategyChoice, Measurements, Strategies, and hooks in the forwarding pipelines. The StrategyChoice records the choice of the strategy for a namespace, and Measurement records are used by strategies to store past performance results for namespaces.
-Management
+
+- Management  
 Implements the NFD Management Protocol, which allows applications to configure NFD and set/query NFD’s internal states. Protocol interaction is done via NDN’s Interest/Data exchange between applications and NFD.
 
-RIB Management
+- RIB Management  
 Manages the routing information base (RIB). The RIB may be updated by different parties in different ways, including various routing protocols, application’s prefix registrations, and command-line manipulation by sysadmins. The RIB management module processes all these requests to generate a consistent forwarding table, and then syncs it up with the NFD’s FIB, which contains only the minimal information needed for forwarding decisions. Strictly speaking RIB management is part of the NFD management module. However, due to its importance to the overall operations and its more complex processing, we make it a separate module.
 
 # NFD运行
