@@ -54,6 +54,7 @@
 `./waf configure`  
 `./waf`  
 `sudo ./waf install`  
+`sudo ldconfig`  
 
 `cd ../`  
 `git checkout remotes/origin/NFD`  
@@ -61,6 +62,7 @@
 `./waf configure`  
 `./waf`  
 `sudo ./waf install`  
+`sudo cp /usr/local/etc/ndn/nfd.conf.sample /usr/local/etc/ndn/nfd.conf`  
 
 ## 测试
 命令：  
