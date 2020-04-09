@@ -47,7 +47,7 @@
 
 ## 下载和编译安装
 命令：  
-`git clone git@github.com:tpgithubact/transfer-real.git`  
+`git clone https://github.com/tpgithubact/transfer-real.git`  
 `cd transfer-real/`  
 `git checkout remotes/origin/ndn-cxx`  
 `cd 0.6.2/`  
