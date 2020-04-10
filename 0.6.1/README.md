@@ -13,5 +13,5 @@ sudo ./waf install
 
 
 ### 运行
-* [peek](tools/peek): 单个数据包传输程序（tools/peek文件夹）
-* [chunks](tools/chunks): 文件传输程序（tools/chunks文件夹）
+* [peek](tools/peek): 单个数据包传输程序（见tools/peek文件夹）
+* [chunks](tools/chunks): 文件传输程序（见tools/chunks文件夹）
