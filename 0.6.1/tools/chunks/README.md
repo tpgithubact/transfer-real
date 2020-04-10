@@ -4,8 +4,7 @@
 
 * **ndnputchunks** is a producer program that reads a file from the standard input, and makes
   it available as NDN Data segments.  It appends version and segment number components
-  to the specified name, according to the
-  [NDN naming conventions](http://named-data.net/publications/techreports/ndn-tr-22-ndn-memo-naming-conventions/).
+  to the specified name.
 
 * **ndncatchunks** is a consumer program that fetches Data segments of a file, optionally
   discovering the latest version of the file, and writes the content of the retrieved file to
@@ -33,9 +32,7 @@ The default discovery method is `iterative`.
 * `aimd` : sends Interests using an additive-increase/multiplicative-decrease (AIMD) algorithm to
            control the window size. By default, a Conservative Loss Adaptation algorithm is adopted
            combining with the AIMD algorithm, that is, at most one window decrease will be
-           performed per round-trip-time. For details please refer to:
-  [A Practical Congestion Control Scheme for Named Data
-  Networking](https://www.researchgate.net/publication/306259672_A_Practical_Congestion_Control_Scheme_for_Named_Data_Networking)
+           performed per round-trip-time.
 
 The default Interest pipeline type is `aimd`.
 
