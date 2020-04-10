@@ -10,32 +10,6 @@
   discovering the latest version of the file, and writes the content of the retrieved file to
   the standard output.
 
-## Version discovery methods in ndncatchunks
-
-* `fixed`    : sends an interest attempting to find a data packet with the
-               specified prefix and version number. A version component must be present at the
-               end of the user-specified NDN name.
-
-* `iterative`: sends a series of interests with ChildSelector set to prefer the
-               rightmost child and Exclude selectors, attempting to find a data packet with the
-               specified prefix and the latest (the largest in the NDN canonical ordering)
-               version number.  The version is declared "latest" after a predefined number of
-               data retrieval timeouts (default: 1).
-
-The default discovery method is `iterative`.
-
-## Interest pipeline types in ndncatchunks
-
-* `fixed`: maintains a fixed-size window of Interests in flight; the window size is configurable
-           via a command line option and defaults to 1.
-
-* `aimd` : sends Interests using an additive-increase/multiplicative-decrease (AIMD) algorithm to
-           control the window size. By default, a Conservative Loss Adaptation algorithm is adopted
-           combining with the AIMD algorithm, that is, at most one window decrease will be
-           performed per round-trip-time.
-
-The default Interest pipeline type is `aimd`.
-
 ## Usage examples
 
 ### Publishing
