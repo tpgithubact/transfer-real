@@ -1,5 +1,25 @@
 ## 作用
+用一对程序传输数据包，熟悉NDN网络中用兴趣包请求数据包的过程。
+
+
+
+
 安装ndn-cxx和NFD，测试ndn环境。
+
+ndnpeek and ndnpoke are a pair of programs to request and make available for retrieval of a single Data packet.
+
+ndnpeek is a consumer program that sends one Interest and expects one Data.
+ndnpoke is a producer program that serves one Data in response to an Interest.
+Usage example:
+
+start NFD on local machine
+execute echo 'HELLO WORLD' | ndnpoke ndn:/localhost/demo/hello
+on another console, execute ndnpeek -p ndn:/localhost/demo/hello
+For more information, consult manpages of these programs.
+
+
+
+
 
 ## 支持平台
 
