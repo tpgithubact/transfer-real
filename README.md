@@ -1,70 +1,16 @@
-## 作用
-安装ndn-cxx和NFD，测试ndn环境。
+## 作用  
+文件夹下含两对可终端运行的程序  
+第一对程序：在数据请求端和数据发布端之间传输单个数据包，用以熟悉NDN网络中的数据传输过程。  
+第二对程序：将文件分块成多个数据包，并在数据请求端和数据发布端之间进行传输，用以验证拥塞控制机制的性能。  
 
-## 支持平台
+## 使用
+编译及使用，见下层文件夹内说明文件(README.md)  
 
-测试过的平台:
-> Ubuntu 16.04 (amd64, armhf, i386)  
-> Ubuntu 18.04 (amd64)  
-> Ubuntu 19.10 (amd64)  
-> macOS 10.13  
-> macOS 10.14  
-> macOS 10.15  
-> CentOS 7 (with gcc 7 and boost 1.58.0)  
+## 注意  
+每个节点都需为NDN节点（包括中间路由节点），即都需要装上ndn-cxx和NFD，并运行NFD
 
-应该可以运行但未测试的平台:
-> Debian >= 9  
-> Fedora >= 24  
-> Gentoo Linux  
-> Raspbian >= 2017-08-16  
-> FreeBSD 11.2  
+如果存在权限问题，可尝试在前面加上sudo运行。
 
-下文针对ndn支持的ubuntu平台，如在安装过程中遇到其它平台或库的问题，需自行解决。  
-运行指令时，如需输入密码，为主机开机密码。
+在使用复杂拓扑传输前，可先在同一主机上的两个终端分别运行数据发布程序和数据请求程序，以验证功能。之后可在多个主机间配置好NDN网络，然后进行多点传输。  
 
-## 准备环境
-> GCC >= 5.3, or clang >= 3.6  
-> python2 >= 2.7, or python3 >= 3.4  
-> Boost libraries >= 1.58  
-> pkg-config  
-> SQLite 3.x  
-> OpenSSL >= 1.0.2  
-
-命令：  
-`sudo apt install build-essential libboost-all-dev libssl-dev libsqlite3-dev pkg-config python-minimal`
-
-> doxygen  
-> graphviz  
-> python-sphinx  
-> sphinxcontrib-doxylink  
-
-命令：  
-`sudo apt install doxygen graphviz python3-pip`  
-`sudo pip3 install sphinx sphinxcontrib-doxylink`
-
-`sudo apt-get install build-essential pkg-config libboost-all-dev libsqlite3-dev libssl-dev libpcap-dev`  
-`sudo apt-get install doxygen graphviz python-sphinx`
-
-## 下载和编译安装
-命令：  
-`git clone https://github.com/tpgithubact/transfer-real.git`  
-`cd transfer-real/`  
-`git checkout remotes/origin/ndn-cxx`  
-`cd 0.6.2/`  
-`./waf configure`  
-`./waf`  
-`sudo ./waf install`  
-`sudo ldconfig`  
-
-`cd ../`  
-`git checkout remotes/origin/NFD`  
-`cd 0.6.2/`  
-`./waf configure`  
-`./waf`  
-`sudo ./waf install`  
-`sudo cp /usr/local/etc/ndn/nfd.conf.sample /usr/local/etc/ndn/nfd.conf`  
-
-## 测试
-命令：  
-`nfd-start`  //如果存在权限问题，可尝试在前面加上sudo运行  
-`nfd-stop`  //如果存在权限问题，可尝试在前面加上sudo运行
+进一步说明见0.6.1/README.md文件
