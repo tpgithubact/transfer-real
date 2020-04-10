@@ -7,11 +7,11 @@
 ### 编译安装
 仍然使用waf的编译方式
 
-./waf configure
-./waf
-sudo ./waf install
+./waf configure  
+./waf  
+sudo ./waf install  
 
 
 ### 运行
-* [peek](tools/peek): transmit a single packet between a consumer and a producer
-* [chunks](tools/chunks): segmented file transfer between a consumer and producer
+* [peek](tools/peek): 单个数据包传输程序（tools/peek文件夹）
+* [chunks](tools/chunks): 文件传输程序（tools/chunks文件夹）
